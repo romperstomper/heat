@@ -1,0 +1,17 @@
+#!/bin/sh
+heat=$(ls -l /tmp/heatingled | awk '{ print $8 }' | cut -d ":" -f2)
+now=$(date | awk '{ print $4 }' | cut -d ":" -f2)
+diff="$(( now - heat ))"
+#echo $diff
+if [[ $diff -lt 0 ]];
+then
+#echo "minus";
+diff="$(( diff * -1 ))";
+fi
+#diff="$(( diff * -1));
+#fi
+if [[ $diff -gt 2 ]];
+then 
+#echo "problem";
+/sbin/reboot;
+fi

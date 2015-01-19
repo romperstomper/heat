@@ -1,0 +1,8 @@
+echo 90 > /dev/ttyACM0 
+sleep 1 
+echo 0 > /dev/ttyACM0
+sleep 1
+echo 90 > /dev/ttyACM0 
+sleep 1
+echo 0 > /dev/ttyACM0
+

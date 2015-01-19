@@ -1,0 +1,7 @@
+#!/bin/sh
+/root/stepw
+sleep 1
+/root/stepw
+sleep 1
+/root/stepw
+sleep 1
