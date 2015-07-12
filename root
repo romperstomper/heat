@@ -1,0 +1,3 @@
+* * * * * tail -c 5 /tmp/heatingled > /www/heat.html
+* * * * * /root/gatewayping
+0 5 * * * reboot
