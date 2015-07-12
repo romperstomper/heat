@@ -1,0 +1,5 @@
+#!/bin/sh
+echo 'w' > /dev/ttyACM0 
+
+
+

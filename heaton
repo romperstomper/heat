@@ -1,0 +1,5 @@
+#!/bin/sh
+/root/steph
+sleep 1
+/root/steph
+sleep 1
